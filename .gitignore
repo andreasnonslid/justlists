@@ -1,0 +1,11 @@
+# Ignore build files
+/build/
+
+# Ignore other temporary or unnecessary files
+*.o
+*.log
+*.tmp
+*.swp
+*.swo
+.DS_Store
+*.bak
