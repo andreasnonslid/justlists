@@ -1,6 +1,3 @@
-# Set the default shell to bash for better compatibility
-set shell := ["bash", "-c"]
-
 # Define variables for paths
 build_dir := "build"
 executable := "justlists"
@@ -18,6 +15,12 @@ build:
 # Command to clean the build directory
 clean:
     rm -rf {{build_dir}}
+
+# Command to rebuild the program
+rebuild:
+    just clean
+    just configure
+    cmake --build {{build_dir}}
 
 # Command to run the compiled program
 run:
