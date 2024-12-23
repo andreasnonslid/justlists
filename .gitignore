@@ -1,5 +1,6 @@
 # Ignore build files
 /build/
+*.list
 
 # Ignore other temporary or unnecessary files
 *.o
